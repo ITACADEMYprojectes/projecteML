@@ -5,7 +5,8 @@
 - Base de dades interna del CRM
 
 **Descripció de les Fonts:**
-- La base de dades CRM conté registres de transaccions, dades de clients i informació sobre les connexions a la web i l'aplicació que el departament d'IT captura mitjançant una 
+- La base de dades CRM conté registres de transaccions, dades de clients i informació sobre les connexions a la web i l'aplicació que el departament d'IT captura mitjançant una API
+  
 ## 2. Mètodes de recol·lecció de dades
 
 **Procediments i Eines:**
@@ -14,7 +15,7 @@
 **Freqüència de Recol·lecció:**
 - Diàriament
   
-**Scripts de Descàrrega:****S:cr
+**Scripts de Descàrrega:**
 
 ```python
 
@@ -22,18 +23,24 @@ import pandas as pd
 
 csv_url = "https://raw.githubusercontent.com/ITACADEMYprojectes/projecteML/main/Ecommerce_Customers.csv"
 df = pd.read_csv(csv_url)
-print(df.## 3. Format i Estructura de les Dades
+print(df.info())
+
+```
+
+## 3. Format i Estructura de les Dades
 
 **Tipus de Dades:**
 - Numèrics: `Avg. Session Length`, `Time on App`, `Time on Website`, `Length of Membership`, `Yearly Amount Spent`
 - Categòric: `Email`, `Address`, `Avatar`
 
 **Format d'Emmagatzematge:**
-- Dades tabulars emmagatzemades en fitx
-  er## 4. Limitacions de les dades
+- Dades tabulars emmagatzemades en fitxer csv.
 
-- Diferents Temps d'Actualització: Les dades d'ús de l'app i del lloc web poden ser recol·lectades i actualitzades al CRM en moments diferents
-.## 5. Consideracions sobre Dades Sensibles
+  ## 4. Limitacions de les dades
+
+- Diferents Temps d'Actualització: Les dades d'ús de l'app i del lloc web poden ser recol·lectades i actualitzades al CRM en moments diferents.
+
+## 5. Consideracions sobre Dades Sensibles
 
 **Tipus de Dades Sensibles:**
 - Informació Personal Identificable (PII): `Email`, `Address`
@@ -46,8 +53,4 @@ print(df.## 3. Format i Estructura de les Dades
 - **Accés Restringit:**
   - Accés a dades sensibles restringit només a personal autoritzat amb necessitat de conèixer aquestes dades per a fins específics del projecte.
 - **Compliment de Regulacions:**
-  - Compliment amb la GDRPdel proyecto.
-- **Cumplimiento de Regulaciones:**
-  - Cumplimiento con la GDRPlaciones:**
-  - Cumplimiento con la GDRP
-print(df.info())
+  - Compliment amb la GDRP
