@@ -36,7 +36,7 @@ print(df.info())
 **Format d'Emmagatzematge:**
 - Dades tabulars emmagatzemades en fitxer csv.
 
-  ## 4. Limitacions de les dades
+## 4. Limitacions de les dades
 
 - Diferents Temps d'Actualització: Les dades d'ús de l'app i del lloc web poden ser recol·lectades i actualitzades al CRM en moments diferents.
 
