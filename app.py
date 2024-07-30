@@ -10,7 +10,7 @@ with open('scaler.pkl', 'rb') as scaler_file:
     scaler = pickle.load(scaler_file)
 
 # Título de la aplicación
-st.title('Predicción con Modelo de Regresión Lineal')
+st.title('Predicción del Gasto Anual de clientes de una Tienda de Ropa (Regresión Lineal)')
 
 # Entrada de datos del usuario
 length_of_membership = st.number_input('Length of Membership (meses)', min_value=0)
