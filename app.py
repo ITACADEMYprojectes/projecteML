@@ -1,12 +1,6 @@
 import streamlit as st
 import pickle
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
-
-import streamlit as st
-import pickle
-import pandas as pd
-from sklearn.preprocessing import StandardScaler
 
 # Cargar el modelo y el escalador desde archivos
 with open('linear_model.pkl', 'rb') as model_file:
